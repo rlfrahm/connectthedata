@@ -1,0 +1,82 @@
+.mtd-container {
+	position: fixed;
+	bottom: 0;
+	right: 2%;
+	min-width: 300px;
+	min-height: 45px;
+	max-height: 95%;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000000;
+	overflow-y: auto;
+}
+
+.mtd-navbar {
+	background-color: #f2f2f2;
+}
+
+.mtd-navbar button {
+	border: 0;
+	background-color: transparent;
+	padding: 0 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.mtd-container button:hover {
+	background-color: #ddd;
+}
+
+.mtd-choices-choice {
+	padding: 5px;
+	cursor: pointer;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.mtd-choices-choice:hover {
+	background-color: #f3f3f3;
+}
+
+.mtd-summary {
+	padding: 5px;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.mtd-container .open {
+	display: none;
+}
+
+.mtd-container.close {
+	min-width: 45px;
+	overflow: hidden;
+}
+
+.mtd-container.close .mtd-navbar,
+.mtd-container.close .mtd-choices,
+.mtd-container.close .mtd-summary {
+	display: none !important;
+}
+
+.mtd-container.close .open {
+	display: block;
+	border: 0;
+	background-color: transparent;
+	font-size: 20px;
+	padding: 20px;
+	cursor: pointer;
+}
